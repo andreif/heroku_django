@@ -16,4 +16,6 @@ heroku config:set DJANGO_SETTINGS_MODULE=project.settings.heroku
 heroku config:set DJANGO_SECRET_KEY=...
 
 git push heroku master
+
+heroku open
 ```
