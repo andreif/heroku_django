@@ -1,0 +1,16 @@
+{
+  "name": "Django project",
+  "description": "",
+  "repository": "https://github.com/andreif/heroku_django",
+  "logo": "https://www.djangoproject.com/s/img/logos/django-logo-positive.svg",
+  "addons": [
+    "scheduler:standard",
+    "heroku-postgresql:hobby-dev",
+    "memcachier:dev"
+  ],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "project.settings.heroku",
+    "DJANGO_SECRET_KEY": ""
+  },
+  "keywords": []
+}
