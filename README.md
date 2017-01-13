@@ -15,6 +15,8 @@ heroku addons:create scheduler:standard
 heroku config:set DJANGO_SETTINGS_MODULE=project.settings.heroku
 heroku config:set DJANGO_SECRET_KEY=...
 
+heroku labs:enable runtime-dyno-metadata
+
 git push heroku master
 
 heroku open

@@ -36,7 +36,6 @@ CACHES = {
     }
 }
 
-# import raven
-# RAVEN_CONFIG = {
-#     'release': raven.fetch_git_sha(os.path.dirname(BASE_DIR)),
-# }
+RAVEN_CONFIG = {
+    'release': os.environ.get('HEROKU_SLUG_COMMIT'),
+}
