@@ -8,3 +8,4 @@ gunicorn==19.6.0
 requests==2.12.4
 pytz==2016.10
 python-dateutil==2.6.0
+raven==5.32.0

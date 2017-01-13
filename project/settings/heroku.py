@@ -5,6 +5,10 @@ ALLOWED_HOSTS = ['project']
 
 DATABASES = {'default': dj_database_url.config()}
 
+INSTALLED_APPS += [
+    'raven.contrib.django.raven_compat',
+]
+
 CACHES = {
     'default': {
         'BACKEND': 'project.cache.MemCachier',
@@ -31,3 +35,8 @@ CACHES = {
         },
     }
 }
+
+# import raven
+# RAVEN_CONFIG = {
+#     'release': raven.fetch_git_sha(os.path.dirname(BASE_DIR)),
+# }
