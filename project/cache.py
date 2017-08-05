@@ -10,6 +10,6 @@ class MemCachier(memcached.PyLibMCCache):
             servers=os.environ['MEMCACHIER_SERVERS'].split(','),
             username=os.environ['MEMCACHIER_USERNAME'],
             password=os.environ['MEMCACHIER_PASSWORD'],
-            behaviors=self._options,
             binary=True,
+            **self._options,
         )
